@@ -6,18 +6,25 @@
 //window
 size(1000, 600);
 
+//sky 
+stroke(188, 245, 255);
+fill(188, 245, 255);
+rect(0, 0, 1000, 400);
+
 //ground
 fill(255, 255, 255);
 stroke(255, 255, 255);
 rect(0, 400, 1000, 600);
 
-//sky 
-fill(188, 245, 255);
-rect(0, 0, 1000, 400);
-
-//sun
+//sun2
+stroke(255,98, 0);
+fill(255, 98, 0);
+ellipse(480, 270, 265, 220); //outer layer
+stroke(255, 144, 75);
+fill(255, 144, 75);
+ellipse(480, 270, 222, 180); //middle layer
 fill(247, 213, 17);
-ellipse(480, 280, 180, 180); //yellow layer
+ellipse(480, 280, 180, 160); //yellow layer
 
 //mountain1
 fill(72, 48, 49);
@@ -49,8 +56,18 @@ stroke(199, 215, 216);
 fill(199, 215, 216);
 triangle(538, 240, 568, 240, 600, 170);
 
+//mountain3 
+stroke(72, 48, 49);
+fill(72, 48, 49);
+triangle(0, 400, 200, 400, 100, 280);
+fill(49, 29, 30);
+triangle(0, 400, 50, 400, 100, 280);
+//snow on mountain3
+
+
 //snowman
-//deco
+//hat
+stroke(199, 215, 216); 
 fill(255, 237, 251);
 triangle(220, 290, 120, 290, 150, 160);
 //body
@@ -62,8 +79,10 @@ fill(0);
 ellipse(150, 310, 15, 15);
 ellipse(200, 310, 15, 15);
 //nose
+stroke(227, 158, 69); 
 fill(227, 158, 69);
 triangle(170, 340, 180, 320, 250, 335);
+ellipse(175, 330, 21, 21);
 //buttons
 fill(0);
 ellipse(170, 410, 10, 10);
@@ -105,6 +124,8 @@ strokeWeight(2);
 rect(830, 478, 50, 82);
 fill(129, 64, 64);
 ellipse(870, 520, 10, 10); //doornobe
+//chimney
+rect(820, 273, 40, 70);
 
 //robot
 stroke(255, 255, 255);
@@ -142,7 +163,7 @@ fill(255, 255, 255);
 circle(612, 388, 2);
 circle(610, 350, 4);
 circle(570, 366, 6);
-
+//hair
 line(620, 389, 645, 392);
 line(597, 334, 607, 290);
 line(570, 340, 566, 328);
